@@ -1,0 +1,17 @@
+/* font  */
+
+
+/* common styles or utilitis*/
+body{
+    background-color: lightgray;
+}
+
+/* Header and navbar */
+nav{
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    padding: 6px;
+    
+}
