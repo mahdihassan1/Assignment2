@@ -4,14 +4,136 @@
 /* common styles or utilitis*/
 body{
     background-color: lightgray;
+   
 }
 
 /* Header and navbar */
-nav{
+.container{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.nav-link{   
+    width: 880px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}    
+.header-button{
+    margin-top: 24px;
+    margin-left: 70px;
+    color: black;
+    font-size: 16px;
+}
+
 nav a{
     text-decoration: none;
     padding: 6px;
     
+}
+ 
+/* ------------------main section ------------ */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product-title{
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   width: 880px;
+ 
+}
+.product-detail h1{
+    font-size: 45px;
+}
+.product-image img{
+    width: 300px;
+    
+}
+.product-image img:hover{
+    transform: scale(1.1) rotate(20deg);
+    transition: transform 2s ease-in-out;
+}
+.product-image{
+    margin-left: 70px;
+    background-image: url(images/Circle\ design.svg);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+.click{
+    background-color: rgb(220, 13, 82);
+    font-size: 16px;
+    color: wheat;
+    border-radius: 10px;
+    
+}
+.click:hover{
+    background-color: rgb(50, 35, 33);
+    transform: scale(1.1);
+    transition: transform 1s ease-in;
+    overflow: hidden;
+}
+.web-markert{
+    border: 0px 1px 0px 1px solid wheat;
+}
+.market-image{
+    width: 60px;
+    margin: 30px;
+    margin-top: 60px;
+}
+/* <!-- ----------------Popular Collection block------------------- --> */
+
+.Popular-Collection {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap:29px;
+}
+.popular-heding{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    
+}
+.callections{
+   
+    background-color: rgb(149 88 88 / 11%);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 8px 0px rgb(94 70 70);}
+.image-item img{
+    width:200px;
+  
+}
+div h2{
+    margin-top: 7px;
+}
+#taka{
+    font-weight: 100;
+}
+.rating{
+    margin-top: -16px;
+}
+.fas{
+    width:8px;
+    padding: 3px;
+}
+.fa-star.fillde {
+    color: rgb(198, 198, 15);
+}
+.fa-star.eamty{
+    color: darkgray;
+}
+#number{
+    margin-left: 10px;
 }
