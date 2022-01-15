@@ -14,6 +14,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
 .nav-link{   
     width: 880px;
     padding: 30px;
@@ -21,6 +22,7 @@ body{
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+  
 }    
 .header-button{
     margin-top: 24px;
@@ -98,6 +100,8 @@ main{
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 20px;
     grid-row-gap:29px;
+    width: auto;
+    height: auto;
 }
 .popular-heding{
     text-align: center;
@@ -106,7 +110,7 @@ main{
     
 }
 .callections{
-   
+   width:200px;
     background-color: rgb(149 88 88 / 11%);
     padding: 10px;
     border-radius: 5px;
@@ -136,4 +140,54 @@ div h2{
 }
 #number{
     margin-left: 10px;
+}
+ /* '---------------------Extra block ------------------------- */
+ .extras{
+    
+ }
+ .extra{
+     
+ }
+ .extra-title{
+     display: flex;
+flex-direction:column;
+ }
+ .extra-mini-number{
+     color: grey;
+     font-size: 15px;
+ }
+ .extra-mine-image img{
+     width: 40px;
+     height: 40px;
+     border-radius: 40px;
+ }
+ .extra-image img{
+     width: 300px;
+     height: 300px;
+ }
+
+/*------------------ This is footer -------------- */
+
+footer{
+    background-color: rgb(5, 3, 81);
+}
+.last-footer{
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+.last-footer a{
+    color: white;
+    margin: 8px;
+}
+
+/* -----------media quarie------------ */
+
+@media only screen and(
+    max-width:688px
+) {
+    
+    
 }
