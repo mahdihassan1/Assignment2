@@ -89,9 +89,13 @@ main{
     border: 0px 1px 0px 1px solid wheat;
 }
 .market-image{
-    width: 60px;
-    margin: 30px;
+    width: 54px;
+    margin: 25px;
     margin-top: 60px;
+}
+  hr{
+    background-color: seashell;
+    border: 2px solid gray;
 }
 /* <!-- ----------------Popular Collection block------------------- --> */
 
@@ -149,9 +153,9 @@ div h2{
     margin-left: 10px;
 }
 .down{
-    background-color: orangered;
-    margin: 46px;
-    margin-left: 669px;
+    background-color: rgba(255, 68, 0, 0.442);
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
     
 }
@@ -165,8 +169,11 @@ div h2{
     align-items: center;
  }
  .extra{
-   padding-right: 52px;}
+
+ }
+  
  .extra-title{
+    padding-left:30px;
      display: flex;
 flex-direction:column;
 margin-bottom: 21px;
@@ -183,7 +190,7 @@ margin-bottom: 21px;
  }
  .extra-image img{
      width: 350px;
-     height: 400px;
+     height: 400px;    margin-left: 25px;
  }
  .extra-main-heding {
      /* width:600px; */
@@ -199,10 +206,13 @@ margin-bottom: 21px;
     font-size: 20px;
 }
 .mini-grid-all{
+    padding-left: 15px;
     display:flex;
     flex-direction:row;
     column-gap:20px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
   
    
 }
@@ -211,6 +221,9 @@ margin-bottom: 21px;
     margin-top: 15px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     
+ }
+ .mini-grid:hover{
+     background-color: rgba(201, 68, 68, 0.231);
  }
  .grid-leter{
      font-size:35px;
@@ -222,6 +235,7 @@ margin-bottom: 21px;
 
 footer{
     background-color: rgb(5, 3, 81);
+    padding-bottom: 40px;
 }
 .last-footer{
     margin-top: 30px;
@@ -237,21 +251,22 @@ footer{
 
 /* -----------media quarie------------ */
 
+/* --------------Mobile devices-------------- */
 @media only screen and (
     max-width:688px
 ) { .container{
     width: 100%;
 }
-    .nav-link, .product-title, .Popular-Collection, .extras {
+    .nav-link,.product-title,.Popular-Collection,.extras {
 
-        background-color: salmon;
+        
         grid-template-columns: repeat(1,1fr);
     }
-    .nav-link, .product-title{
+    .nav-link,.product-title{
         width: auto;
     }
     
-    .nav-link,.product-title, .Popular-Collection, .extras {
+    .nav-link,.product-title,.Popular-Collection,.extras {
         flex-direction: column;
     }
 
@@ -261,6 +276,7 @@ footer{
 
     }
     .extras {
+        display: none;
         display: grid;
         grid-template-columns: repeat(1,1fr);
         width: 100%;
@@ -268,3 +284,34 @@ footer{
     }
       
 }
+/*----------------- Tab and Ipad ------------------- */
+ @media only screen and (min-width:688px) and (max-width:992px) { 
+     
+    
+    .container{
+         
+         width: 100%;
+     }
+     .nav-link,.product-title,.Popular-Collection,.extras {
+
+        
+        grid-template-columns: repeat(2,1fr);
+    }
+
+
+    .nav-link,.product-title,.Popular-Collection,.extras {
+        flex-direction: column;
+    }
+    .extra {
+        padding-left: 32px;
+    }
+    .product-detail {
+        padding: 55px;
+    }
+    nav, span{
+        padding: 54px;
+    }
+    
+
+ }
+ /* -------------------------Alhamdullial finish------------------------- */
