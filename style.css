@@ -131,6 +131,10 @@ div h2{
 .rating{
     margin-top: -16px;
 }
+.rating, span{
+    color: gray;
+    font-size: 15px;
+}
 .fas{
     width:8px;
     padding: 3px;
@@ -258,7 +262,7 @@ footer{
     }
     .extras {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         width: 100%;
         align-items: center;
     }
