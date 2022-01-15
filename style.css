@@ -1,9 +1,12 @@
 /* font  */
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Luxurious+Roman&family=Montserrat&family=Poppins&family=Roboto+Mono:ital,wght@1,300&family=Roboto+Slab:wght@200;300&display=swap');
 
 /* common styles or utilitis*/
 body{
-    background-color: lightgray;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
    
 }
 
@@ -141,16 +144,29 @@ div h2{
 #number{
     margin-left: 10px;
 }
- /* '---------------------Extra block ------------------------- */
- .extras{
+.down{
+    background-color: orangered;
+    margin: 46px;
+    margin-left: 669px;
+    border-radius: 20px;
     
+}
+ /* '---------------------Extra block ------------------------- */
+ 
+
+ 
+ .extras {display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 880px;
+    align-items: center;
  }
  .extra{
-     
- }
+   padding-right: 52px;}
  .extra-title{
      display: flex;
 flex-direction:column;
+margin-bottom: 21px;
+
  }
  .extra-mini-number{
      color: grey;
@@ -162,8 +178,40 @@ flex-direction:column;
      border-radius: 40px;
  }
  .extra-image img{
-     width: 300px;
-     height: 300px;
+     width: 350px;
+     height: 400px;
+ }
+ .extra-main-heding {
+     /* width:600px; */
+    
+   
+}
+.h3-block{
+    font-size: 25px;
+    color: rgb(220, 13, 82);
+}
+.detiles-block{
+    padding: 20px;
+    font-size: 20px;
+}
+.mini-grid-all{
+    display:flex;
+    flex-direction:row;
+    column-gap:20px;
+    flex-wrap: wrap;
+  
+   
+}
+ .mini-grid{
+    font-size: 18px;
+    margin-top: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    
+ }
+ .grid-leter{
+     font-size:35px;
+     font-weight: 700;
+     color: rgb(220, 13, 82);
  }
 
 /*------------------ This is footer -------------- */
@@ -185,9 +233,34 @@ footer{
 
 /* -----------media quarie------------ */
 
-@media only screen and(
+@media only screen and (
     max-width:688px
-) {
+) { .container{
+    width: 100%;
+}
+    .nav-link, .product-title, .Popular-Collection, .extras {
+
+        background-color: salmon;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .nav-link, .product-title{
+        width: auto;
+    }
     
-    
+    .nav-link,.product-title, .Popular-Collection, .extras {
+        flex-direction: column;
+    }
+
+    .web-markert {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    .extras {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+        align-items: center;
+    }
+      
 }
